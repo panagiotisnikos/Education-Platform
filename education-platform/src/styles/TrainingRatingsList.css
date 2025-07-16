@@ -1,0 +1,48 @@
+/* TrainingRatingsList.css */
+
+.ratings-container {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  }
+  
+  .ratings-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .rating-item {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .rating-item:last-child {
+    border-bottom: none;
+  }
+  
+  .rating-item p {
+    margin: 0 0 5px;
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  .star-rating {
+    display: flex;
+  }
+  
+  .star {
+    color: #ddd;
+    margin-right: 3px;
+    font-size: 1.2rem;
+  }
+  
+  .star.selected {
+    color: #ffc107;
+  }
+  

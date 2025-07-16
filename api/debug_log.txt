@@ -1,0 +1,75 @@
+Received Data: 
+Error: Missing user_id or training_plan_id
+Received Data: Array
+(
+    [user_id] => 6
+    [training_plan_id] => 7
+    [section_id] => 18
+)
+
+Received Data: 
+Error: Missing user_id or training_plan_id
+Received Data: Array
+(
+    [user_id] => 6
+    [training_plan_id] => 7
+    [section_id] => 18
+)
+
+Received Data: 
+Error: Missing user_id or training_plan_id
+Received Data: Array
+(
+    [user_id] => 6
+    [training_plan_id] => 7
+    [section_id] => 18
+)
+
+Received Data: 
+Error: Missing user_id or training_plan_id
+Received Data: Array
+(
+    [user_id] => 6
+    [training_plan_id] => 7
+    [section_id] => 18
+)
+
+Received Data: Array
+(
+    [user_id] => 6
+    [training_plan_id] => 7
+    [section_id] => 19
+)
+
+Received Data: 
+Error: Missing user_id or training_plan_id
+Received Data: Array
+(
+    [user_id] => 6
+    [training_plan_id] => 7
+    [section_id] => 18
+)
+
+Received Data: 
+Error: Missing user_id or training_plan_id
+Received Data: Array
+(
+    [user_id] => 6
+    [training_plan_id] => 7
+    [section_id] => 19
+)
+
+Received Data: Array
+(
+    [user_id] => 6
+    [training_plan_id] => 7
+    [section_id] => 20
+)
+
+Received Data: Array
+(
+    [user_id] => 6
+    [training_plan_id] => 7
+    [status] => completed
+)
+

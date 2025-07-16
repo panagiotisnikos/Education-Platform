@@ -1,0 +1,66 @@
+.my-trainings {
+    text-align: center;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.training-card {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 15px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.training-card img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.training-info {
+    flex: 1;
+    text-align: left;
+}
+
+.progress-container {
+    width: 100%;
+    background: #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    overflow: hidden;
+    height: 15px;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #4caf50;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    line-height: 15px;
+    transition: width 0.5s ease-in-out;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}

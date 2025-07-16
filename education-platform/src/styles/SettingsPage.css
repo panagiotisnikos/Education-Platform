@@ -1,0 +1,48 @@
+body.light {
+    background-color: white;
+    color: black;
+  }
+  
+  body.dark {
+    background-color: #121212;
+    color: white;
+  }
+  
+  .settings-container {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  body.dark .settings-container {
+    background-color: #222;
+    color: white;
+  }
+  
+  body.light .settings-container {
+    background-color: white;
+    color: black;
+  }
+  .unipi-btn {
+    background-color: #0b2d5f; /* Σκούρο μπλε του Πανεπιστημίου Πειραιώς */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .unipi-btn:hover {
+    background-color: #09254d; /* Πιο σκούρο μπλε για hover */
+    transform: scale(1.05);
+  }
+  
+  .unipi-btn:active {
+    background-color: #081e3c; /* Ακόμα πιο σκούρο για active state */
+    transform: scale(0.98);
+  }
+  
+  
+  
+  

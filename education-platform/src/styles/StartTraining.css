@@ -1,0 +1,161 @@
+.start-training-container {
+  display: flex;
+  background-color: #f8f9fa;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.course-sidebar {
+  width: 300px;
+  background-color: #7b1113;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  color: white;
+  text-align: center;
+}
+
+.sidebar-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-family: 'Georgia', serif;
+  letter-spacing: 0.5px;
+  border-bottom: 3px solid #ffffff;
+  padding-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.training-item {
+  margin-bottom: 10px;
+}
+
+.training-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #0b2246; 
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.training-button:hover {
+  background: #081a36;
+}
+
+.training-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.training-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #7b1113;
+  margin-bottom: 15px;
+}
+
+.content-header {
+  font-size: 20px;
+  font-weight: bold;
+  color: #5c0d0e;
+  margin-bottom: 10px;
+}
+
+.section-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  background: #fff;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.section-item:hover {
+  background: #f4e4e4;
+}
+
+.section-btn {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: left;
+  color: #7b1113;
+}
+
+.section-btn.active {
+  background-color: #7b1113;
+  color: white;
+  border-radius: 5px;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #7b1113;
+  margin-bottom: 10px;
+}
+
+.section-description {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.5;
+}
+.rating-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating-modal {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.star-rating {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.star {
+  font-size: 24px;
+  cursor: pointer;
+  color: gray;
+}
+
+.star.selected {
+  color: gold;
+}
+
+
+
+
+
+
+
+  
+  
+  

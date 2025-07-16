@@ -1,0 +1,432 @@
+/* Βασικές ρυθμίσεις */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0D274D; /* Σκούρο μπλε */
+  padding: 10px 20px;
+  color: white;
+  flex-wrap: wrap;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer; /* 🔹 Οπτική ένδειξη ότι είναι clickable */
+  transition: transform 0.2s ease-in-out;
+}
+.navbar-brand:hover {
+  transform: scale(1.05); /* 🔹 Ελαφρύ zoom όταν ο χρήστης κάνει hover */
+}
+.navbar-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  padding-left: 5px;
+  transition: color 0.3s;
+}
+.navbar-brand:hover .navbar-title {
+  color: #A41E22; /* 🔹 Αλλαγή χρώματος στο hover */
+}
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap; /* ✅ Επιτρέπει στα κουμπιά να προσαρμόζονται σε μικρές οθόνες */
+}
+.navbar-links button {
+  background-color: #A41E22; /* Κόκκινο */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.nav-button {
+  background-color: #A41E22; /* Κόκκινο Πανεπιστημίου */
+  color: white;
+  border: 2px solid white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-button:hover {
+  background-color: white;
+  color: #0D274D;
+  border-color: #0D274D;
+}
+.navbar-links button:hover {
+  background-color: #8A181D; /* Πιο σκούρο κόκκινο */
+}
+.unipi-logo {
+  height: 40px;
+  width: auto;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 16px;
+}
+.navbar button {
+  background-color: #A41E22; /* Κόκκινο από το logo */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.navbar button:hover {
+  background-color: #8A181D; /* Πιο σκούρο κόκκινο για hover */
+}
+
+/* Προφίλ χρήστη στο Navbar */
+.profile-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.profile-image {
+  width: 40px !important; /* Σταθερό μέγεθος */
+  height: 40px !important;
+  border-radius: 50% !important; /* Εξαναγκάζουμε το κυκλικό σχήμα */
+  object-fit: cover !important; /* Καλύτερη εμφάνιση */
+  border: 2px solid #A41E22 !important; /* Περίγραμμα */
+}
+
+
+.default-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ccc;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.profile-name {
+  font-weight: bold;
+  color: #A41E22;
+}
+/* Container για όλο το περιεχόμενο */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Cards για τα training plans */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+/* Εικονίδιο ρυθμίσεων */
+.gear-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  margin-left: 10px;
+}
+
+/* Κουμπί αποσύνδεσης */
+.logout-button {
+  background-color: #A41E22;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid #A41E22;
+}
+
+.logout-button:hover {
+  background-color: white;
+  color: #A41E22;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+  .navbar a {
+    margin: 5px 0;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr; /* Μόνο μία στήλη σε κινητές συσκευές */
+  }
+
+  .container {
+    width: 95%;
+  }
+  .navbar-links {
+    justify-content: center;
+  }
+
+  .nav-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* Στυλ για τα slides */
+.slick-slide {
+  position: relative;
+  cursor: pointer; /* 🔥 Δείχνει ότι είναι clickable */
+  transition: transform 0.3s ease-in-out;
+}
+
+.slick-slide:hover {
+  transform: scale(1.05); /* 🔥 Μικρό zoom effect όταν περνάει το ποντίκι */
+}
+
+/* Στυλ για τις εικόνες */
+.slick-slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.slick-slide:hover img {
+  opacity: 0.85; /* 🔥 Μειώνει λίγο τη φωτεινότητα στο hover */
+}
+
+/* Στυλ για το overlay τίτλου */
+.slick-slide .overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.welcome-banner {
+  background: linear-gradient(to right, #0D274D, #A41E22);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.welcome-banner h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.welcome-banner p {
+  font-size: 18px;
+  margin-top: 5px;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/* Το κύριο περιεχόμενο θα εκτείνεται για να κρατήσει το Footer στο κάτω μέρος */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Το περιεχόμενο της σελίδας */
+.main-content {
+  flex: 1;
+  padding-bottom: 50px;
+}
+/* Footer */
+.footer {
+  background-color: #0a2240; /* Σκούρο μπλε του Πανεπιστημίου */
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer a {
+  color: #A41E22; /* Κόκκινο Πανεπιστημίου */
+  text-decoration: none;
+  font-weight: bold;
+}
+.social-icons {
+  margin-top: 10px;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.instructor-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: white;
+  font-size: 20px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #A41E22; /* Κόκκινο του Πανεπιστημίου */
+  transform: scale(1.2); /* Εφέ μεγέθυνσης */
+}
+.trainee-progress-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.trainee-progress-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.trainee-progress-table th,
+.trainee-progress-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.trainee-progress-table th {
+  background-color: #A41E22; /* Κόκκινο του Πανεπιστημίου Πειραιώς */
+  color: white;
+}
+
+progress {
+  width: 100px;
+  height: 10px;
+}
+/* Στυλ για τη φόρμα δημιουργίας Training Plan */
+.training-plan-container {
+  background-color: white;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 3px solid #0D274D; /* Μπλε πανεπιστημίου */
+}
+
+.form-title {
+  color: #0D274D;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.training-plan-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-label {
+  font-weight: bold;
+  color: #0D274D;
+}
+
+.form-button {
+  background-color: #A41E22;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-button:hover {
+  background-color: #8A181D;
+}
+
+.preview-container {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.preview-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.form-message {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #A41E22;
+}

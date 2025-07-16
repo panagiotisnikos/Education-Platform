@@ -1,0 +1,110 @@
+/* 📌 Βασικά Στυλ */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #002147, #0056b3); /* Πανεπιστημιακά χρώματα */
+  }
+  
+  .register-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .university-logo {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #002147;
+    margin-bottom: 5px;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* 📌 Φόρμα Εισόδου */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  input:focus, select:focus {
+    border-color: #0056b3;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(0, 86, 179, 0.5);
+  }
+  
+  .upload-label {
+    background: #0056b3;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .upload-label input {
+    display: none;
+  }
+  
+  /* 📌 Κουμπί */
+  .register-btn {
+    background: #0056b3;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+  }
+  
+  .register-btn:hover {
+    background: #003a80;
+  }
+  
+  /* 📌 Εφέ Εμφάνισης */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  .image-preview-container {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .image-preview {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #00509e; /* Μπλε του Πανεπιστημίου */
+  }
+    

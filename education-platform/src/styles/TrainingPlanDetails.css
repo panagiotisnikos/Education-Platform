@@ -1,0 +1,19 @@
+.training-plan-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .training-header {
+    text-align: center;
+  }
+  
+  .start-training-btn {
+    background-color: #ffcc00;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  

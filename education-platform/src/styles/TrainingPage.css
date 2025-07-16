@@ -1,0 +1,78 @@
+.training-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+
+  .sidebar {
+    width: 300px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-right: 2px solid #ddd;
+  }
+  
+  .sidebar h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .sidebar li.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .materials {
+    margin-top: 20px;
+  }
+  
+  .file-item {
+    margin-bottom: 15px;
+  }
+  
+  video, iframe {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .section-content {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+
+  .complete-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .complete-btn:hover {
+    background-color: #218838;
+  }
+  
+  
